@@ -1,0 +1,27 @@
+{
+  "name": "passgen",
+  "version": "0.1.0",
+  "description": "A Node.js CLI for generating passwords based on Traversy Media's \"Build a Node.js Password Generator\" tutorial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopalmeiro/passgen.git"
+  },
+  "author": "João Palmeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaopalmeiro/passgen/issues"
+  },
+  "homepage": "https://github.com/joaopalmeiro/passgen#readme",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "clipboardy": "^2.3.0",
+    "commander": "^8.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
+}
