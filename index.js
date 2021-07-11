@@ -4,6 +4,8 @@ const clipboardy = require('clipboardy');
 const pjson = require('./package.json');
 const log = console.log;
 
+const createPassword = require('./utils/createPassword');
+
 // Source:
 // - https://github.com/tj/commander.js/issues/48#issuecomment-49087390
 // - https://stackoverflow.com/a/10855054
@@ -15,5 +17,8 @@ program
   .option('-ns, --no-symbols', 'remove symbols')
   .parse();
 
-// console.log(program.opts());
+// log(program.opts());
 const { length, numbers, symbols } = program.opts();
+
+const generatedPassword = createPassword(length, numbers, symbols);
+log(generatedPassword);
