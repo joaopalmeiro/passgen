@@ -1,13 +1,15 @@
 #!/usr/bin/env node
-const program = require('commander');
+const os = require('os');
+
 const chalk = require('chalk');
 const clipboardy = require('clipboardy');
-const os = require('os');
-const log = console.log;
+const program = require('commander');
 
 const pjson = require('./package.json');
-const createPassword = require('./utils/createPassword');
 const constants = require('./utils/constants');
+const createPassword = require('./utils/createPassword');
+
+const log = console.log;
 
 // Source:
 // - https://github.com/tj/commander.js/issues/48#issuecomment-49087390

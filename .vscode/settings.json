@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": null,
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // More info: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+  "eslint.probe": ["javascript"]
+}
