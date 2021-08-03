@@ -9,6 +9,7 @@ A Node.js CLI for generating passwords based on Traversy Media's "[Build a Node.
 - [clipboardy](https://github.com/sindresorhus/clipboardy) package.
 - `npm i commander chalk clipboardy`.
 - `npm install --save-dev --save-exact prettier`.
+- `os.EOL` ([documentation](https://nodejs.org/docs/latest-v14.x/api/os.html#os_os_eol)): operating system-specific end-of-line marker (`\n` on POSIX, `\r\n` on Windows).
 
 ## Development
 

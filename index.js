@@ -1,9 +1,10 @@
 const program = require('commander');
 const chalk = require('chalk');
 const clipboardy = require('clipboardy');
-const pjson = require('./package.json');
+const os = require('os');
 const log = console.log;
 
+const pjson = require('./package.json');
 const createPassword = require('./utils/createPassword');
 
 // Source:
@@ -27,5 +28,5 @@ const generatedPassword = createPassword(length, numbers, symbols);
 clipboardy.writeSync(generatedPassword);
 
 // Output.
-log(chalk.blue('Generated password: ') + chalk.bold(generatedPassword));
+log(chalk.blue('Generated password: ') + chalk.bold(generatedPassword) + os.EOL);
 log(chalk.yellow('Password copied to clipboard'));
