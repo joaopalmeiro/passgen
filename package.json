@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "A Node.js CLI for generating passwords based on Traversy Media's \"Build a Node.js Password Generator\" tutorial.",
   "main": "index.js",
+  "bin": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "symlink": "npm link"
   },
   "repository": {
     "type": "git",
