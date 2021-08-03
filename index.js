@@ -20,5 +20,12 @@ program
 // log(program.opts());
 const { length, numbers, symbols } = program.opts();
 
+// Get password.
 const generatedPassword = createPassword(length, numbers, symbols);
-log(generatedPassword);
+
+// Copy to clipboard.
+clipboardy.writeSync(generatedPassword);
+
+// Output.
+log(chalk.blue('Generated password: ') + chalk.bold(generatedPassword));
+log(chalk.yellow('Password copied to clipboard'));

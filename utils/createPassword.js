@@ -18,7 +18,6 @@ const createPassword = (length = 8, hasNumbers = true, hasSymbols = true) => {
 
 const generatePassword = (length, chars) => {
   const random = crypto.randomBytes(Number(length));
-  console.log(random[7] % chars.length);
   let password = '';
 
   for (let i = 0; i < length; i++) {
